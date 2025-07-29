@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Kiosk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="coffee-name">Coffee 1</div>
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Coffee 1" width="120" style="border-radius:8px; margin-bottom: 14px;">
+      <button class="select-btn" onclick="selectCoffee('Coffee 1')">Select</button>
+    </div>
+    <div class="card">
+      <div class="coffee-name">Coffee 2</div>
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" alt="Coffee 2" width="120" style="border-radius:8px; margin-bottom: 14px;">
+      <button class="select-btn" onclick="selectCoffee('Coffee 2')">Select</button>
+    </div>
+  </div>
+
+  <div class="admin-panel">
+    <div class="admin-title">Admin Panel</div>
+    <div id="selectedCoffee" class="selected-coffee">No coffee selected yet.</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
